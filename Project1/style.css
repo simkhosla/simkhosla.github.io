@@ -252,15 +252,15 @@ li {
 #instructions {
   position: fixed;
   top: 0  ;
-  right: 10%;
-  left: 10%;
+  right: 20%;
+  left: 20%;
   bottom: 10%;
   font-family: 'Quicksand', sans-serif;
   font-size: 14;
   font-weight: normal;
   text-align: center;
   padding: 40px;
-  height: 70%;
+  height: 60%;
   display: none;
 
 }

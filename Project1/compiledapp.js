@@ -43,7 +43,7 @@ var bandColor = ['#bada55', '#fe3324', '#ffb951'];
 
 //array defining button colors classes
 
-var buttonClass = [".buttonB", ".buttonK", ".buttonLZ"];
+var buttonClass = ["buttonB", "buttonK", "buttonLZ"];
 
 //array defining background static images
 
@@ -274,7 +274,7 @@ $( document ).ready(function() {
         $('#canvas').css("background-image", "url("+bandStatic[band]+")");
         console.log("turns left is 0");
         $("button").prop("disabled",true);
-        $("button").addClass('.buttonDisabled');
+        $("button").addClass('buttonDisabled');
         $('#turnsDisplay').append(" CLICK HERE TO RESET GAME.");
       } else {
         console.log(turnsLeft+"turnsLeft")
@@ -315,11 +315,17 @@ $("#turnsDisplay").click(function(){
       player2.score = 0;
       console.log(player2.score);
       $('#score2').text(player2.score);
-      console.log('player1 score should be 0 now');
-      }
+      console.log('player2 score should be 0 now');
+    }
 
       $("button").prop("disabled",false);
+
+      $("button").removeClass('buttonDisabled');
       $("button").addClass(buttonClass[band]);
+
+
+      console.log(button.className);
+
       $('#canvas').css("background-image", "url("+canvasBackground[band]+")");
 });
 
