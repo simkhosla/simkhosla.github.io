@@ -272,7 +272,7 @@ li {
 #instructionsClicker {
   position: fixed;
   top: 0  ;
-  width: 100%;
+  width: 60%;
   height: 1%;
   font-family: 'Quicksand', sans-serif;
   font-size: 16;
