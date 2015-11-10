@@ -76,7 +76,7 @@ var winIMGx = [400, 425, 380];
 var winIMGy = [250, 260, 255];
 
 //initially the difficulty is set to medium (ie. 60) in case people don't push buttons
-var difficulty = 60;
+var difficulty = 70;
 
 
 
@@ -87,7 +87,7 @@ var hardBtn = document.getElementById('hard');
 
 easyBtn.onclick = function () {
   console.log("Diff is EASY");
-  difficulty = 80;
+  difficulty = 90;
   //changes color of menu bar to active button  :
     easyBtn.style.color = bandColor[band];
     medBtn.style.color = "black";
@@ -97,7 +97,7 @@ easyBtn.onclick = function () {
 
 medBtn.onclick = function () {
   console.log("Diff is medium");
-  difficulty = 60;
+  difficulty = 70;
   //changes color of menu bar to active button :
   medBtn.style.color = bandColor[band];
   easyBtn.style.color = "black";
@@ -107,7 +107,7 @@ medBtn.onclick = function () {
 
 hardBtn.onclick = function () {
   console.log("Diff is hard");
-  difficulty = 30;
+  difficulty = 40;
   //changes color of menu bar to active button :
   hardBtn.style.color = bandColor[band];
   easyBtn.style.color = "black";
@@ -159,7 +159,7 @@ hardBtn.onclick = function () {
     // }
 
 
-var turnsLeft = 30;
+var turnsLeft = 20;
 
 var runCanvas = function() {
 
@@ -237,7 +237,7 @@ var runCanvas = function() {
       }
 
       //plays win sounds
-      winSounds[band].play(); 
+      winSounds[band].play();
 
     } else {
 
