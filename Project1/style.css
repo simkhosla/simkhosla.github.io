@@ -147,7 +147,7 @@ p.side {
 }
 
 .beatlesBtnStatic {
-  background-image: url(beatles/sidebarbuttons/overbeatles.png);
+  background-image: url(beatles/sidebarbuttons/overBeatles.png);
   width: 200px;
   height: 85px;
 }
@@ -159,7 +159,7 @@ p.side {
 }
 
 .kissBtnStatic {
-  background-image: url(sidebarbuttons/overkiss.png);
+  background-image: url(sidebarbuttons/overKISS.png);
   width: 200px;
   height: 85px;
 }
@@ -176,24 +176,24 @@ p.side {
 }
 
 .kissBtn {
-  background-image: url(sidebarbuttons/nkiss.png);
+  background-image: url(sidebarbuttons/nKiss.png);
   width: 200px;
   height: 85px;
 }
 
 .kissBtn:hover {
-  background-image: url(sidebarbuttons/overkiss.png);
+  background-image: url(sidebarbuttons/overKISS.png);
   cursor: pointer;
 }
 
 .lzBtn {
-  background-image: url(sidebarbuttons/nledzep.png);
+  background-image: url(sidebarbuttons/nLedZep.png);
   width: 200px;
   height: 85px;
 }
 
 .lzBtn:hover {
-  background-image: url(sidebarbuttons/overledzep.png);
+  background-image: url(sidebarbuttons/overLedZep.png);
   cursor: pointer;
 }
 
