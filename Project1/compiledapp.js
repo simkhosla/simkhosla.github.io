@@ -274,7 +274,7 @@ $( document ).ready(function() {
         $('#canvas').css("background-image", "url("+bandStatic[band]+")");
         console.log("turns left is 0");
         $("button").prop("disabled",true);
-        $("button").addClass('.disabled');
+        $("button").addClass('.buttonDisabled');
         $('#turnsDisplay').append(" CLICK HERE TO RESET GAME.");
       } else {
         console.log(turnsLeft+"turnsLeft")
