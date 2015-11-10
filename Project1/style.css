@@ -260,11 +260,14 @@ li {
   font-weight: normal;
   text-align: center;
   padding: 40px;
-  height: 60%;
+  height: 70%;
   display: none;
 
 }
 
+#winAudio {
+  display: none;
+}
 
 #instructionsClicker {
   position: fixed;

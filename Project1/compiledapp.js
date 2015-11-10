@@ -23,8 +23,13 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-//assigns random Y value to each of the band members
+//loads up the winning audio noises
 
+var audioBeatles = new Audio("winSounds/beatles.ogg");
+var audioKiss = new Audio("winSounds/kiss.ogg");
+var audioLZ = new Audio("winSounds/ledzep.ogg");
+
+var winSounds = [audioBeatles, audioKiss, audioLZ];
 
 
 //loser messages for each band:
@@ -220,6 +225,7 @@ var runCanvas = function() {
       $( "canvas" ).effect( "shake" );
       messagebox.style.color = bandColor[band];
       messagebox.innerHTML = "ZOMG YOU GOT ONE!";
+
       if (pickPlayer ==1) {
         player1.score = player1.score + 1;
         $('#score1').text(player1.score);
@@ -229,6 +235,9 @@ var runCanvas = function() {
         $('#score2').text(player2.score);
         console.log('Player is player '+pickPlayer+" and their score is now "+score2);
       }
+
+      //plays win sounds
+      winSounds[band].play(); 
 
     } else {
 
