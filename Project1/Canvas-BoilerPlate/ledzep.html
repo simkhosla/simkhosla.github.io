@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Rock &amp; Roll Slots: Led Zeppelin</title>
+    <link rel="icon" type="image/gif" href="ledzep/ledzepicon.jpg" />
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300|Exo:400,600,300,900,500italic,100italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class = "mainLedZep">
+  <div id = "sidebar">
+    <ul>
+      <li><p class = "side"> PICK A BAND: </p></li>
+      <li class = "side"><a href = "beatles.html"><div class = "beatlesBtn"></div></a></li>
+      <li class = "side"><a href = "kiss.html"><div class = "kissBtn"></div></a></li>
+      <li class = "side"><div class = "ledzepBtnStatic"></div></li>
+    </ul>
+  </div>
+  <div id = "content" align = "center">
+  <div id = 'ledzepGame'>
+    <p> Click the button below until all the Led Zep symbols are in a row.</p>
+      <p>
+        <ul>
+          <li>DIFFICULTY:</li>
+          <li><a class = "nav" id = "easy">EASY</a></li>
+          <li><a class = "nav" id = "med">MEDIUM</a></li>
+          <li><a class = "nav" id = "hard">HARD</a></li>
+        </ul>
+      </p>
+  <canvas id="canvas" class="canvasLZ" width = "500" height = "350"></canvas>
+    <p id = "message"> &nbsp; </p>
+  <div class ="ledzepLogo"></div>
+    <button id='button' class="buttonLZ" type="button" name="button">↻</button>
+      <p id = "turnsDisplay"></p>
+  </div>
+  </div>
+
+  <div id = "player1box">
+  <li><div id = "player1"><h3>Player 1</h3></div></li>
+  <li><div><h1 id = "score1"></h1></div></li>
+  </div>
+
+  <div id = "player2box">
+  <li><div id = "player2"><h3>Player 2</h3></div></li>
+  <li><div><h1 id = "score2"></h1></div></li>
+  </div>
+
+
+  <div id = "instructionsClicker"><h4>CLICK FOR INSTRUCTIONS</h4></div>
+  <div id = "instructions">
+    <h1> INSTRUCTIONS </h1>
+    <p> First, chose your band using the buttons on the left. Then, click the button below to run the slots.</p>
+    <p> You get 30 chances to see how many times you can successfully spin the slots. </p>
+    <p>A succesful spin means you've lined up all the band members. </p>
+    <p> If the game feels too hard (or too easy), change difficulty using the tabs up top. </p>
+    <p> Click on the Players to toggle between scoring Player 1 and Player 2.</p>
+    <p> Reset Player scores by hitting the number next to Player 1 or Player 2. </p>
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
+    <p class = 'underline'> Click here to close this window. </p>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js'></script>
+  <script src='compiledapp.js'></script>
+  </body>
+</html>

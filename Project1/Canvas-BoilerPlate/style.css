@@ -1,0 +1,318 @@
+/* below stuff says same for all pages */
+#sidebar {
+  width: 10%;
+  float: left;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+#content {
+   width: 80%;
+   float: left;
+   margin-right: 1em;
+   margin-top: 2em;
+ }
+
+ p {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 12;
+   line-height: 80%;
+   padding-left: 20px;
+   padding-right: 20px;
+   line-height: 130%;
+ }
+ p.small {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 5;
+   line-height: 60%;
+ }
+
+p.side {
+  white-space: nowrap;
+  font-size: 14;
+  line-height: normal;
+  margin-left: -10px;
+  margin-bottom: -5px;
+}
+
+ ul {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 14;
+     list-style-type: none;
+     margin: 10;
+     padding: 10;
+     font-weight: bold;
+ }
+
+ li {
+   display: inline ;
+ }
+
+ td {
+   padding: 20px;
+ }
+
+ #message {
+   font-weight: bolder;
+ }
+
+ .side {
+   margin: 12px;
+   width: 200px;
+ }
+
+/*formatting all the buttons per page individually through classes */
+
+.buttonB {
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  background: #bbda55;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  align: center
+}
+
+.buttonB:hover {
+  background: #9eb848;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonLZ {
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  background: #ffb951;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  align: center
+}
+
+.buttonLZ:hover {
+  background: #FFC36A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonK {
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  background: #fe3324;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  align: center
+}
+
+.buttonK:hover {
+  background: #da1b0d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonDisabled {
+  background: grey;
+}
+
+
+.buttonDisabled:hover {
+  background: grey;
+}
+
+
+/* formatting the background and border of the canvas itself */
+
+.canvasB {
+  border: 10px solid #BADA55;
+  border-radius: 25px;
+  background: url(beatles/beatlesStatic.gif)
+}
+
+.canvasLZ {
+  border: 10px solid #ffb951;
+  border-radius: 25px;
+  background: url(ledZep/lzStatic.gif)
+}
+
+.canvasK {
+  border: 10px solid #fe3324;
+  border-radius: 25px;
+  background: url(Kiss/kissStatic.gif)
+
+}
+
+.beatlesBtnStatic {
+  background-image: url(beatles/sidebarbuttons/overbeatles.png);
+  width: 200px;
+  height: 85px;
+}
+
+.ledzepBtnStatic {
+  background-image: url(sidebarbuttons/overLedZep.png);
+  width: 200px;
+  height: 85px;
+}
+
+.kissBtnStatic {
+  background-image: url(sidebarbuttons/overkiss.png);
+  width: 200px;
+  height: 85px;
+}
+
+.beatlesBtn {
+  background-image: url(sidebarbuttons/nBeatles.png);
+  width: 200px;
+  height: 85px;
+}
+
+.beatlesBtn:hover {
+  background-image: url(sidebarbuttons/overBeatles.png);
+  cursor: pointer;
+}
+
+.kissBtn {
+  background-image: url(sidebarbuttons/nkiss.png);
+  width: 200px;
+  height: 85px;
+}
+
+.kissBtn:hover {
+  background-image: url(sidebarbuttons/overkiss.png);
+  cursor: pointer;
+}
+
+.lzBtn {
+  background-image: url(sidebarbuttons/nledzep.png);
+  width: 200px;
+  height: 85px;
+}
+
+.lzBtn:hover {
+  background-image: url(sidebarbuttons/overledzep.png);
+  cursor: pointer;
+}
+
+.mainBeatles {
+  background: url(beatles/beatles/beatlesbkg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mainLedZep {
+  background: url(ledZep/LedZep/lzbkg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mainKiss {
+  background: url(Kiss/Kiss/kissbkg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#player1box {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#player2box {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#turnsDisplay {
+  font-size: 9;
+  margin-top: 5px;
+}
+
+#turnsDisplay:hover {
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+}
+
+.score {
+  color: black;
+  font-size: 80;
+}
+
+#instructions {
+  position: fixed;
+  top: 0  ;
+  right: 10%;
+  left: 10%;
+  bottom: 10%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14;
+  font-weight: normal;
+  text-align: center;
+  padding: 40px;
+  height: 70%;
+  display: none;
+
+}
+
+
+#instructionsClicker {
+  position: fixed;
+  top: 0  ;
+  width: 100%;
+  height: 1%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+}
+
+#instructionsClicker:hover{
+  cursor: pointer;
+}
+
+
+.underline  {
+  text-decoration: underline;
+  font-size: 12;
+}
+
+.underline:hover{
+  cursor: pointer;
+}
+
+h4 {
+  margin-top: -5px;
+  font-weight: normal;
+}
+
+#player1:hover {
+  cursor: pointer;
+}
+
+#player2:hover {
+  cursor: pointer;
+}
+
+h1 {
+  padding: 10px;
+}
+
+#score1:hover {
+  cursor: pointer;
+}
+
+#score2:hover {
+  cursor: pointer;
+}
