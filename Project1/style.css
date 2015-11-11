@@ -324,3 +324,33 @@ h1 {
 #score2:hover {
   cursor: pointer;
 }
+
+#phonePhoto {
+  display: none;
+}
+
+@media screen and (max-width: 550px){
+  body {
+    display: none;
+  }
+  .mainBeatles {
+    background: url(tablet-turn-icon.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .mainLedZep {
+    background: url(tablet-turn-icon.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .mainKiss {
+    background: url(tablet-turn-icon.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+
+
+}
