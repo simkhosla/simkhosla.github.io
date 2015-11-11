@@ -267,6 +267,10 @@ $( document ).ready(function() {
 //defaults begins with player1
     $('#player1').css("background-color", bandColor[band]);
 
+//draws attention to Instructions up top
+      // $('#instructionsClicker').effect('pulsate');
+      //this felt a little too siezure inducing 
+
 });
 
 //below is what happens on button click
