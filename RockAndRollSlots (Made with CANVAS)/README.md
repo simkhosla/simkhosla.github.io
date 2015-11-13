@@ -3,6 +3,7 @@ This started as me playing around with some tools in canvas to make a slot machi
 
 ###Initialize: 
 Get started by picking any of the three bands included and open either "beatles.html", "kiss.html" or "ledzep.html" in a browser of your choice. 
+#####Get started with the Beatles here: http://simkhosla.github.io/RockAndRollSlots%20(Made%20with%20CANVAS)/beatles.html
 
 ###Play By Band:
 Each band has it's own version of the slots game to play, complete with band-themed messages when you win or lose. Here's what all of them look like:
