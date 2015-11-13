@@ -30,7 +30,7 @@ $('#go').click (function (){
 
 
 
-var extraMarkerSRCs = ['extras/1.png','extras/2.png', 'extras/3.png', 'extras/4.png', 'extras/5.png', 'extras/6.png', 'extras/7.png', 'extras/8.png'];
+var extraMarkerSRCs = ['extras/1.png','extras/2.png', 'extras/3.png', 'extras/4.png', 'extras/5.png', 'extras/6.png', 'extras/7.png', 'extras/8.png', 'extras/9.png', 'extras/10.png', 'extras/11.png'];
 
 
   //this is what should happen when a location is put in
@@ -58,7 +58,7 @@ function initialize(lat, long) {
           var request1 = {
            location: currentPlace,
            radius: '10000',
-           types: ['atm']
+           types: ['atm'|'cafe']
          }
 
          var request2 =  {
@@ -85,12 +85,6 @@ function initialize(lat, long) {
           types: ['bus_station']
         }
 
-        var request6 = {
-          location: currentPlace,
-          radius: '10000',
-          types: ['park']
-        }
-
         var requestMain = {
           location: currentPlace,
           radius: '7000',
@@ -103,7 +97,6 @@ function initialize(lat, long) {
          service.nearbySearch(request3, callback);
          service.nearbySearch(request4, callback);
          service.nearbySearch(request5, callback);
-         service.nearbySearch(request6, callback);
 
          service.nearbySearch(requestMain, callbackWaldo);
          service.nearbySearch(requestMain, callbackWenda);
@@ -116,12 +109,12 @@ function initialize(lat, long) {
           var marker = new google.maps.Marker({
             map: map,
             position: place.geometry.location,
-            icon: extraMarkerSRCs[getRandomInt(0,7)]
+            icon: extraMarkerSRCs[getRandomInt(0,10)]
           })};
 
 
 
-          console.log (extraMarkerSRCs[getRandomInt(0,7)]);
+          console.log (extraMarkerSRCs[getRandomInt(0,10)]);
 
          function callback(results, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
