@@ -1,7 +1,7 @@
 ##Where in the World Is Waldo?
 This started as me trying to learn the Google Maps Javascript API and Google Places API. 
 Play ANYWHERE in the world by popping in a latitude and longitude up top.
-
+![WheresWaldo](http://i.imgur.com/9QsX3sj.jpg)
 
 ###How It Works:
 The Google Places API allows you to search for places nearby the center of the map. 
