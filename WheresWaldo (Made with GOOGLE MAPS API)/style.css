@@ -20,6 +20,10 @@ button {
   font-size: 2vw;
 }
 
+#random {
+  margin-left: 50px;
+
+}
 
 #image {
   position: absolute;
@@ -28,8 +32,10 @@ button {
   z-index: 20;
 }
 
+
+
 body {
-  background-color: red; 
+  background-color: red;
 }
 
 

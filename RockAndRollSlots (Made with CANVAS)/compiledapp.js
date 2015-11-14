@@ -269,7 +269,7 @@ $( document ).ready(function() {
 
 //draws attention to Instructions up top
       // $('#instructionsClicker').effect('pulsate');
-      //this felt a little too siezure inducing 
+      //this felt a little too siezure inducing
 
 });
 
