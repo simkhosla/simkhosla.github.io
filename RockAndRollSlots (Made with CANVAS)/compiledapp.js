@@ -182,28 +182,28 @@ var runCanvas = function() {
 
     var firstIMG = new Image();
     firstIMG.onload = function() {
-    ctx.drawImage(firstIMG, 60, firstValue);
+    ctx.drawImage(firstIMG, 60, firstValue, 65, 107);
     }
     firstIMG.src = firstIMGsrc[band];
 // loads first band member
 
     var secondIMG = new Image();
     secondIMG.onload = function() {
-    ctx.drawImage(secondIMG, 160, secondValue);
+    ctx.drawImage(secondIMG, 160, secondValue, 65, 107);
     }
     secondIMG.src = secondIMGsrc[band];
 //loads second band member
 
     var thirdIMG = new Image();
     thirdIMG.onload = function() {
-    ctx.drawImage(thirdIMG, 260, thirdValue);
+    ctx.drawImage(thirdIMG, 260, thirdValue, 65, 107);
     }
     thirdIMG.src = thirdIMGsrc[band];
 //loads third band member
 
     var fourthIMG = new Image();
     fourthIMG.onload = function() {
-    ctx.drawImage(fourthIMG, 360, fourthValue);
+    ctx.drawImage(fourthIMG, 360, fourthValue, 65, 107);
     }
     fourthIMG.src = fourthIMGsrc[band];
 
