@@ -1,7 +1,6 @@
 <html>
 <head>
-<style> 
-
+<style>
 *{
 	box-sizing:border-box;
 }
@@ -55,7 +54,7 @@ article{
 	transform:translateY(-50%);
 }
 
-</style> 
+</style>
 </head>
 <body>
 <article>
@@ -63,7 +62,7 @@ article{
   <div class="column">
     <h1 id="headline">Nic Cage Name Generator</h1>
 	<p id="text">Click to find out what your Nic Cage name and starring role is.</p>
-  
+
 	<button id="shuffler">CAGE ME!</button>
   </div>
   <div class="column">
@@ -71,10 +70,10 @@ article{
     <div id="testing"> </div>
   </div>
 </div>
-	
+
 </article>
 </body>
-<script> 
+<script>
 function WordShuffler(holder,opt){
     var that = this;
     var time = 0;
@@ -487,7 +486,7 @@ function sanitizeNulls($string) {
         'https://www.placecage.com/350/480',
         'https://www.placecage.com/c/150/200',
         'https://www.placecage.com/150/200',
-	'https://www.placecage.com/c/150/250',
+        'https://www.placecage.com/c/150/250',
         'https://www.placecage.com/150/250'
       ];
         picture = getRandomItem($pics);
@@ -524,23 +523,23 @@ function setupItems() {
     $first_name = getRandomItem(first_names);
     $last_name = getRandomItem(last_names);
    if ($last_name === '-') {
-     $last_name = ''; 
+     $last_name = '';
    }
-    $movie_first_items = getRandomItem(first_movies); 
-  $split = $movie_first_items.split('-'); 
-  $type = $split[0]; 
-  $movie_first = $split[1]; 
-  $movie_last = getRandomItem(last_movies); 
+    $movie_first_items = getRandomItem(first_movies);
+  $split = $movie_first_items.split('-');
+  $type = $split[0];
+  $movie_first = $split[1];
+  $movie_last = getRandomItem(last_movies);
 
   while ($movie_last == '-') {
     if ($type == '1') {
-    $movie_last = getRandomItem(last_movies); 
+    $movie_last = getRandomItem(last_movies);
     } else {
-      $movie_last = ''; 
+      $movie_last = '';
     }
   }
 
-   
+
       $line_1 = $first_name + ' ' + $last_name;
       $line_2 = "stars in " + $movie_first + " " + $movie_last;
       headText.writeWord($line_1); // make the new name appear
@@ -564,4 +563,4 @@ function setupItems() {
 
 
 
-<!-- Animation and CSS sourced from https://codepen.io/SaschaSigl/pen/woGYKJ --> 
+<!-- Animation and CSS sourced from https://codepen.io/SaschaSigl/pen/woGYKJ -->
